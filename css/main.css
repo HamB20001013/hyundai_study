@@ -1,2 +1,46 @@
 @charset "utf-8";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #191919;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: Pretendard, "Nanum Myeongjo", -apple-system, BlinkMacSystemFont,
+  system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+  "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.64px;
+  color: #191919;
+  word-break: keep-all;
+  overflow-x: hidden;
+  min-width: 780px;
+}
+/* 공통요소 */
+.wrap {
+  position: relative;
+}
+.inner {
+  position: relative;
+  max-width: 1800px;
+  width: 100%;
+  min-width: 640px;
+  padding: 0px 90px;
+  margin: 0 auto;
+  background-color: brown;
+}
