@@ -30,6 +30,8 @@ body {
   word-break: keep-all;
   overflow-x: hidden;
   min-width: 780px;
+  background-color: rgba(255, 235, 205, 0.39);
+  height: 5000px;
 }
 /* 공통요소 */
 .wrap {
@@ -143,7 +145,7 @@ body {
 .language-box {
   padding-top: 25px;
 }
-.language-world {
+.language-word {
   position: relative;
   display: block;
   padding-right: 22px;
@@ -153,7 +155,7 @@ body {
   color: #000;
   cursor: pointer;
 }
-.language-world::after {
+.language-word::after {
   content: "";
   display: inline-block;
   background: url("../images/select_icon2.png") no-repeat;
