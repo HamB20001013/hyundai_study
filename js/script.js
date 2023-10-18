@@ -1,6 +1,24 @@
 window.onload = function() {
   // AOS
   AOS.init();
+  // 안내창
+  let body = document.querySelector("body");
+  let modal = document.querySelector(".modal-wrap");
+  modal.addEventListener("click", function() {
+    // modal.style.display = "none";
+    // fadeOut(modal);
+    anime({
+      targets:".modal",
+      delay: 200,
+      duration: 500,
+      opacity: 0,
+      easing: "easeInOutQuad",
+      complete: function() {
+        modal.style.display = "none";
+        body.classList.add("active")
+      }
+    });
+  });
   // 메뉴 기능
   const nav = document.querySelector(".nav");
   const btMenu = document.querySelector(".bt-menu");
@@ -73,7 +91,7 @@ window.onload = function() {
   // 비디오 시간 체크
   // 비디오 재생시간을 보관할 배열 생성
   let videosTimeArr = [];
-  for (let i = 0; i < videosTimeArr.length; i++) {
+  for (let i = 0; i < videos.length; i++) {
     // 시간을 보관
     videosTimeArr[i] = Math.ceil(videos[i].duration);
   }
